@@ -1,0 +1,12 @@
+base:
+  version: VERSION
+  css:
+    components:
+      css/components/main.min.css: {}
+
+  js:
+    js/main.min.js: {}
+  dependencies:
+  - core/jquery
+  - core/jquery.once
+
