@@ -4,25 +4,29 @@
             <div class="container">
                 {{ page.header }}
             </div>
-
         </header>
     {% endif %}
 
-    {% if page.content|render|striptags|trim is not empty %}
-        <section class="layout-content" role="complementary">
-            <div></div>
-            <div class="container">
-                {{ page.content }}
-            </div>
+    {% if page.banner_image is not empty %}
+        <section class="banner-image-container">
+            {{ page.banner_image }}
         </section>
+    {% endif %}
+
+    {% if page.content is not empty %}
+        <main class="layout-content">
+            <section role="complementary">
+                <div class="container">
+                    {{ page.content }}
+                </div>
+            </section>
+        </main>
     {% endif %}
 
     {% if page.footer|render|striptags|trim is not empty %}
         <footer class="layout-footer" role="contentinfo">
             <div class="container">
                 <h2>Footer</h2>
-                <h3>qwerqw</h3>
-                <h3>qwerqw</h3>
             </div>
         </footer>
     {% endif %}
