@@ -7,10 +7,13 @@
 
         </header>
     {% endif %}
-
-    {% if page.content|render|striptags|trim is not empty %}
+    {% if page.banner_image|render|trim is not empty %}
+        <div class="banner-image-layout">
+           {{ page.banner_image }}
+        </div>
+    {% endif %}
+    {% if page.content is not empty %}
         <section class="layout-content" role="complementary">
-            <div></div>
             <div class="container">
                 {{ page.content }}
             </div>
@@ -20,10 +23,10 @@
     {% if page.footer|render|striptags|trim is not empty %}
         <footer class="layout-footer" role="contentinfo">
             <div class="container">
-                <h2>Footer</h2>
-                <h3>qwerqw</h3>
-                <h3>qwerqw</h3>
+                {{ page.footer }}
             </div>
         </footer>
     {% endif %}
+
+    <input type="file">
 </div>

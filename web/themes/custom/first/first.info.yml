@@ -9,6 +9,7 @@ libraries:
 
 regions:
   header: Header
+  banner_image: 'Banner image'
   content: Content
   sidebar_main: 'Sidebar main'
   footer: Footer
