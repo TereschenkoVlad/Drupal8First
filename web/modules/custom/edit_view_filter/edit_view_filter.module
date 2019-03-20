@@ -1,0 +1,8 @@
+<?php
+function edit_view_filter_views_pre_build(&$view) {
+  if ($view->name == 'gallery') {
+    if ($view->current_display == 'Block') {
+       $view->filter['field_taxonomy_term_term_id']->options['expose']['value'] = '6';
+    }
+  }
+}

@@ -1,0 +1,10 @@
+name: edit_view_filter
+description: Change some value of the field in the filter view
+package: Custom
+
+type: module
+version: 1.0
+core: 8.x
+
+dependencies:
+- drupal:views

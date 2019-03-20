@@ -1,0 +1,7 @@
+edit_view_filter.content:
+  path: '/'
+  defaults:
+    _controller: 'Drupal\edit_view_filter\Controller\FilterViewController::content'
+    _title: 'Hello world'
+  requirements:
+    _permission: 'access content'

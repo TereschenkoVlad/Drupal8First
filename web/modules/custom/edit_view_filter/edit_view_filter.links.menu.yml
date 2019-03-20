@@ -1,0 +1,6 @@
+edit_view_filter.admin:
+  title: 'First module settings'
+  description: 'A basic module to return hello world'
+  parent: system.admin_config_development
+  route_name: edit_view_filter.content
+  weight: 100
