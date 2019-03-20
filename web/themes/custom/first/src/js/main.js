@@ -8,7 +8,3 @@
 })(jQuery)
 
 
-let input = document.querySelector('input[type="file"]')
-console.dir(input);
-input.preventDefault();
-

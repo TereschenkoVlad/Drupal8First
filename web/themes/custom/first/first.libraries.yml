@@ -10,3 +10,10 @@ base:
   - core/jquery
   - core/jquery.once
 
+isotope:
+  version: 3.0.6
+  js:
+    libs/isotope/isotope.pkgd.min.js: {}
+  dependencies:
+  - core/jquery
+

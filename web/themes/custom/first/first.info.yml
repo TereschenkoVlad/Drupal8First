@@ -6,6 +6,7 @@ core: 8.x
 libraries:
 - first/base
 - core/normalize
+- first/isotope
 
 regions:
   header: Header

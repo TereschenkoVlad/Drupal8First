@@ -1,0 +1,8 @@
+<?php
+
+//Isotope
+
+function first_preprocess_views_view__my_isotope_list (&$variables) {
+    $variables['#attached']['library'][] = 'first/isotope';
+    $variables['#attached']['library'][] = 'first/base';
+}
